@@ -1,0 +1,1036 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>Crazepony軟件框架講解 | Crazepony四軸飛行器</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.1">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="../wiki/software-experience.html" />
+    
+    
+    <link rel="prev" href="../wiki/hardware-base.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="5.3" data-basepath=".." data-revision="Wed Aug 26 2015 01:46:52 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="about-crazepony.html">
+            
+                
+                    <a href="../about-crazepony.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        閃亮登場
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="wiki/user-guide.html">
+            
+                
+                    <a href="../wiki/user-guide.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        入手試飛指導
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="wiki/assemble-guide.html">
+            
+                
+                    <a href="../wiki/assemble-guide.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        組裝維修指導
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="quad-copter.html">
+            
+                
+                    <a href="../quad-copter.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        四軸飛行器
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="wiki/quadcopter-history.html">
+            
+                
+                    <a href="../wiki/quadcopter-history.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        四軸飛行器歷史回顧
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="wiki/opensource-quadcopter.html">
+            
+                
+                    <a href="../wiki/opensource-quadcopter.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        開源四軸飛行器
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="wiki/quadcopter-star.html">
+            
+                
+                    <a href="../wiki/quadcopter-star.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        四軸飛行器明星產品
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="model-aircraft.html">
+            
+                
+                    <a href="../model-aircraft.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        航模基本概念掃盲
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="wiki/copter-terminology.html">
+            
+                
+                    <a href="../wiki/copter-terminology.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        航模常用術語
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="wiki/large-small-quadcopter.html">
+            
+                
+                    <a href="../wiki/large-small-quadcopter.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        大四軸 VS 小四軸
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="wiki/pitch-yaw-roll.html">
+            
+                
+                    <a href="../wiki/pitch-yaw-roll.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        三維中pitch，yaw，roll的區別
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="wiki/quadcopter-aerodynamic.html">
+            
+                
+                    <a href="../wiki/quadcopter-aerodynamic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        四軸飛行器的空氣動力原理
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="quadcopter-base.html">
+            
+                
+                    <a href="../quadcopter-base.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        四軸飛行器基本組成部分
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="wiki/motor-aircraft-model.html">
+            
+                
+                    <a href="../wiki/motor-aircraft-model.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        航模電機
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="wiki/motor-control-ic.html">
+            
+                
+                    <a href="../wiki/motor-control-ic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        電機驅動控制
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="wiki/propeller.html">
+            
+                
+                    <a href="../wiki/propeller.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        航模槳葉
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="wiki/main-controller-mcu.html">
+            
+                
+                    <a href="../wiki/main-controller-mcu.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        飛行控制器-主控MCU
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="wiki/main-controller-sensor.html">
+            
+                
+                    <a href="../wiki/main-controller-sensor.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        飛行控制器——傳感器
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="wiki/remote-controller-2-4.html">
+            
+                
+                    <a href="../wiki/remote-controller-2-4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        遙控器——2.4G通信
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="wiki/remote-controller-bt.html">
+            
+                
+                    <a href="../wiki/remote-controller-bt.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        遙控器——藍牙通信
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="crazepony-dev.html">
+            
+                
+                    <a href="../crazepony-dev.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Crazepony原理講解
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="wiki/ic-readme.html">
+            
+                
+                    <a href="../wiki/ic-readme.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Crazepony器件選型總覽及說明
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="wiki/hardware-base.html">
+            
+                
+                    <a href="../wiki/hardware-base.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Crazepony硬件原理講解
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.3" data-path="wiki/software-base.html">
+            
+                
+                    <a href="../wiki/software-base.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Crazepony軟件框架講解
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="wiki/software-experience.html">
+            
+                
+                    <a href="../wiki/software-experience.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Crazepony軟件開發經驗總結
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="development.html">
+            
+                
+                    <a href="../development.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        二次開發指南
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="wiki/setup-environment-in-windows-none.html">
+            
+                
+                    <a href="../wiki/setup-environment-in-windows-none.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        windows下開發環境搭建—裸機版本
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="wiki/setup-environment-in-windows.html">
+            
+                
+                    <a href="../wiki/setup-environment-in-windows.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        windows下開發環境搭建—FreeRTOS版本
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="wiki/setup-environment-in-linux.html">
+            
+                
+                    <a href="../wiki/setup-environment-in-linux.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        linux下開發環境搭建
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="wiki/crazepony-android-client.html">
+            
+                
+                    <a href="../wiki/crazepony-android-client.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        Crazepony Android客戶端
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="wiki/flash-firmware.html">
+            
+                
+                    <a href="../wiki/flash-firmware.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        主控固件燒寫
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="about-algorithm.html">
+            
+                
+                    <a href="../about-algorithm.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        四軸飛行器算法講解
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="wiki/attitude-algorithm.html">
+            
+                
+                    <a href="../wiki/attitude-algorithm.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        姿態解算簡介
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="wiki/attitude-math.html">
+            
+                
+                    <a href="../wiki/attitude-math.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        姿態的數學表示方法
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="wiki/attitude-measure.html">
+            
+                
+                    <a href="../wiki/attitude-measure.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        姿態的測量
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="wiki/attitude-algorithm-flow-graph.html">
+            
+                
+                    <a href="../wiki/attitude-algorithm-flow-graph.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        姿態解算流程
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="wiki/software-algorithm.html">
+            
+                
+                    <a href="../wiki/software-algorithm.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                        軟件姿態解算
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="wiki/hardware-algorithm.html">
+            
+                
+                    <a href="../wiki/hardware-algorithm.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                        硬件姿態解算
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="wiki/quaternions.html">
+            
+                
+                    <a href="../wiki/quaternions.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.7.</b>
+                        
+                        四元數
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="wiki/mpu6050.html">
+            
+                
+                    <a href="../wiki/mpu6050.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.8.</b>
+                        
+                        三軸陀螺儀和三軸加速度計MPU6050
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="wiki/algorithm-pid.html">
+            
+                
+                    <a href="../wiki/algorithm-pid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.9.</b>
+                        
+                        PID算法
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" data-path="wiki/ms5611.html">
+            
+                
+                    <a href="../wiki/ms5611.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.10.</b>
+                        
+                        氣壓計MS5611
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="crazyflie.html">
+            
+                
+                    <a href="../crazyflie.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        Crazyflie研究筆記
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="wiki/freertos-intro.html">
+            
+                
+                    <a href="../wiki/freertos-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        FreeRTOS簡介
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="wiki/macro-controls.html">
+            
+                
+                    <a href="../wiki/macro-controls.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        介紹幾個常用的宏的作用
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="wiki/system-flow-graph.html">
+            
+                
+                    <a href="../wiki/system-flow-graph.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                        固件系統流程框架
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="wiki/comm-protocol.html">
+            
+                
+                    <a href="../wiki/comm-protocol.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.</b>
+                        
+                        通信協議
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="other.html">
+            
+                
+                    <a href="../other.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        其他
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1" data-path="wiki/crazepony-construct.html">
+            
+                
+                    <a href="../wiki/crazepony-construct.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                        Crazepony的板型及結構
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="wiki/source-setting.html">
+            
+                
+                    <a href="../wiki/source-setting.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                        源代碼的文件編碼和文件格式
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Crazepony四軸飛行器</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="crazepony%E8%BB%9F%E4%BB%B6%E6%A1%86%E6%9E%B6%E8%AC%9B%E8%A7%A3">Crazepony&#x8EDF;&#x4EF6;&#x6846;&#x67B6;&#x8B1B;&#x89E3;</h1>
+<p>&#x98DB;&#x63A7;&#x6E90;&#x4EE3;&#x78BC;&#x90E8;&#x5206;&#xFF0C;&#x622A;&#x6B62;&#x76EE;&#x524D;&#x70BA;&#x6B62;&#xFF0C;&#x90FD;&#x662F;&#x5C6C;&#x65BC;&#x4E00;&#x78DA;&#x4E00;&#x74E6;&#x6572;&#x51FA;&#x4F86;&#x7684;&#x3002;&#x6C92;&#x6709;&#x4F7F;&#x7528;&#x5BE6;&#x6642;&#x64CD;&#x4F5C;&#x7CFB;&#x7D71;&#xFF0C;&#x6211;&#x5011;&#x7A31;&#x4E4B;&#x70BA;&#x88F8;&#x6A5F;&#x4EE3;&#x78BC;&#xFF0C;&#x672A;&#x4F7F;&#x7528;&#x64CD;&#x4F5C;&#x7CFB;&#x7D71;&#x88F8;&#x8DD1;&#x7684;&#x610F;&#x601D;&#x3002;&#x70BA;&#x4E86;&#x6EFF;&#x8DB3;&#x5404;&#x500B;&#x5C64;&#x6B21;&#x7528;&#x6236;&#x7684;&#x9700;&#x6C42;&#x548C;&#x9AD4;&#x73FE;&#x51FA;&#x6211;&#x5011;&#x7684;&#x52AA;&#x529B;&#xFF0C;&#x5F8C;&#x7E8C;&#x6703;&#x8A66;&#x8457;&#x79FB;&#x690D;&#x4E00;&#x500B;FreeRtos&#x7684;&#x5BE6;&#x6642;&#x64CD;&#x4F5C;&#x7CFB;&#x7D71;&#x5167;&#x6838;&#xFF0C;&#x56E0;&#x70BA;bitcraze &#x5718;&#x968A;&#x5C31;&#x7528;&#x7684;&#x9019;&#x500B;&#x5167;&#x6838;&#xFF0C;&#x5411;&#x4ED6;&#x5011;&#x7121;&#x9650;&#x9760;&#x8FD1;&#x662F;&#x6211;&#x5011;&#x7684;&#x76EE;&#x6A19;&#x3002;</p>
+<p>&#x90A3;&#x9EBC;&#xFF0C;&#x73FE;&#x5728;&#x5C31;&#x7D50;&#x5408;&#x88F8;&#x6A5F;&#x4EE3;&#x78BC;&#xFF0C;&#x4F86;&#x8AAA;&#x8AAA;Crazepony&#x7684;&#x8EDF;&#x4EF6;&#x6846;&#x67B6;&#x3002;</p>
+<h2 id="%E8%BB%9F%E4%BB%B6%E6%B5%81%E7%A8%8B%E5%9C%96">&#x8EDF;&#x4EF6;&#x6D41;&#x7A0B;&#x5716;</h2>
+<p><img src="../assets/img/software-1.png" alt=""></p>
+<p>&#x7E3D;&#x9AD4;&#x7684;&#x6D41;&#x7A0B;&#x5716;&#xFF0C;&#x5C31;&#x662F;&#x9019;&#x9EBC;&#x7C21;&#x55AE;&#x3002;&#x5B9A;&#x6642;&#x5668;4&#x88E1;&#x9762;&#x7684;&#x4EFB;&#x52D9;&#xFF0C;&#x662F;&#x6574;&#x500B;&#x98DB;&#x6A5F;&#x7684;&#x6838;&#x5FC3;&#x3002;&#x4E0B;&#x9762;&#x5177;&#x9AD4;&#x4ECB;&#x7D39;&#x5BE6;&#x73FE;&#x7D30;&#x7BC0;&#x3002;</p>
+<h2 id="%E5%88%9D%E5%A7%8B%E5%8C%96">&#x521D;&#x59CB;&#x5316;</h2>
+<p>&#x5B78;&#x904E; 51&#x55AE;&#x7247;&#x6A5F;&#x7684;&#x90FD;&#x77E5;&#x9053;&#xFF0C;&#x4EFB;&#x4F55;&#x4E00;&#x500B;&#x8655;&#x7406;&#x5668;&#x8981;&#x6B63;&#x5E38;&#x904B;&#x884C;&#x5F8C;&#x9762;&#x7684;&#x4EE3;&#x78BC;&#xFF0C;&#x9996;&#x5148;&#x5FC5;&#x9808;&#x5F97;&#x6709;&#x4E00;&#x5927;&#x6BB5;&#x8A2D;&#x5099;&#x521D;&#x59CB;&#x5316;&#x7684;&#x4EE3;&#x78BC;&#x5148;&#x904B;&#x884C;&#xFF0C;&#x9019;&#x4E9B;&#x4EE3;&#x78BC;&#x7528;&#x65BC;&#x521D;&#x59CB;&#x5316;&#x8655;  &#x7406;&#x5668;&#x7684;&#x5167;&#x90E8;&#x6642;&#x9418;&#x3001;&#x4E2D;&#x65B7;&#x512A;&#x5148;&#x7D1A;&#x3001;I/O &#x53E3;&#x7684;&#x8F38;&#x5165;&#x8F38;&#x51FA;&#x65B9;&#x5411;&#x7B49;&#x7B49;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x70BA;&#x5F8C;&#x7E8C;&#x4EE3;&#x78BC;&#x6B63;&#x5E38;&#x904B;&#x884C;&#xFF0C;&#x505A;&#x4E86;&#x4E00;&#x500B;&#x74B0;&#x5883;&#x914D;&#x7F6E;&#x6E96;&#x5099;&#x3002;</p>
+<p>Crazepony &#x7684;&#x4E3B;&#x63A7;&#x662F;Crotex-M3&#x5167;&#x6838;&#xFF0C;&#x5176;&#x5BE6;&#x5C31;&#x662F;ARM&#x67B6;&#x69CB;&#x767C;&#x5C55;&#x5230;&#x4E00;&#x5B9A;&#x968E;&#x6BB5;&#x7684;&#x7522;&#x7269;&#x3002;Crotex-M3&#x90A3;&#x662F;&#x4EC0;&#x9EBC;&#x5462;&#xFF1F;&#x9084;&#x662F;ARM&#x67B6;&#x69CB;&#x3002;&#x65BC;&#x662F;&#xFF0C;&#x5C0D;ARM&#x7684;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x9996;&#x5148;&#x5FC5;&#x9808;&#x8981;&#x505A;&#x7684;&#x5C31;&#x662F;&#x7CFB;&#x7D71;&#x6642;&#x9418;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x4E2D;&#x65B7;&#x5411;&#x91CF;&#x8868;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x4E2D;&#x65B7;&#x512A;&#x5148;&#x7D1A;&#x521D;&#x59CB;&#x5316;&#xFF0C;I/O&#x65B9;&#x5411;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="../assets/img/software-2.png" alt=""></p>
+<p>STM32&#x5167;&#x90E8;&#x6A21;&#x64EC;EEPROM&#x521D;&#x59CB;&#x5316;&#x2192;LED&#x521D;&#x59CB;&#x5316;&#x2192;&#x5EF6;&#x6642;&#x51FD;&#x6578;&#x521D;&#x59CB;&#x5316;&#x2192;&#x85CD;&#x7259;&#x96FB;&#x6E90;&#x4F7F;&#x80FD;&#x521D;&#x59CB;&#x5316;&#x2192;&#x96FB;&#x6A5F;PWM&#x8F38;&#x51FA;&#x521D;&#x59CB;&#x5316;&#x2192;&#x96FB;&#x6C60;&#x96FB;&#x58D3;AD&#x521D;&#x59CB;&#x5316;&#x2192;IIC&#x7E3D;&#x7DDA;&#x521D;&#x59CB;&#x5316;&#x2192;&#x50B3;&#x611F;&#x5668;&#x521D;&#x59CB;&#x5316;&#x2192;PID&#x53C3;&#x6578;&#x521D;&#x59CB;&#x5316;&#x2192;&#x7121;&#x7DDA;&#x6536;&#x767C;&#x6A21;&#x584A;&#x521D;&#x59CB;&#x5316;&#x70BA;&#x63A5;&#x53D7;&#x6A21;&#x5F0F;&#x2192;&#x958B; &#x85CD;&#x7259;&#x2192;&#x958B;&#x5B9A;&#x6642;&#x5668;3&#x2192;&#x958B;&#x5B9A;&#x6642;&#x5668;4&#x3002;</p>
+<p>&#x521D;&#x59CB;&#x5316;&#x770B;&#x8D77;&#x4F86;&#x5F88;&#x7E41;&#x96DC;&#xFF0C;&#x5F88;&#x591A;&#xFF0C;&#x4E5F;&#x6C92;&#x5565;&#x597D;&#x8AAA;&#x7684;&#x3002;</p>
+<p>&#x63A5;&#x4E0B;&#x4F86; &#xFF0C;&#x7A0B;&#x5E8F;&#x904B;&#x884C;&#x5230;&#x6B7B;&#x5FAA;&#x74B0;while&#xFF08;1&#xFF09;&#xFF1B;&#x7A0B;&#x5E8F;&#x6703;&#x4E00;&#x76F4;&#x505C;&#x5728;&#x9019;&#x88E1;&#xFF0C;&#x7B49;&#x5F85;&#x6578;&#x64DA;&#x4E2D;&#x65B7;&#x7684;&#x5230;&#x4F86;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x6B7B;&#x6A5F;&#x6B7B;&#x5728;&#x9019;&#x88E1;&#xFF0C;&#x9019;&#x662F;&#x6709;&#x5340;&#x5225;&#x7684;&#xFF0C;&#x5B78;&#x904E;51&#x7684;&#x4EBA;&#x90FD;&#x77E5;&#x9053;&#xFF0C;&#x6211;&#x4E0D;&#x518D;&#x591A;&#x8AAA;&#x3002;</p>
+<p>&#x5728;&#x521D;&#x59CB;&#x5316;&#x4EE3;&#x78BC;&#x6BB5;&#xFF0C;&#x6211;&#x5011;&#x8AAA;&#x5230;&#x521D;&#x59CB;&#x5316;&#x4E86;&#x5169;&#x500B;&#x5B9A;&#x6642;&#x5668;&#xFF0C;&#x4E00;&#x500B;&#x5B9A;&#x6642;&#x5668;3&#xFF0C;&#x4E00;&#x500B;&#x5B9A;&#x6642;&#x5668;4&#xFF0C;&#x9019;&#x5169;&#x500B;&#x5B9A;&#x6642;&#x5668;&#x90FD;&#x53EF;&#x4EE5;&#x6253;&#x65B7;&#x6B7B;&#x5FAA;&#x74B0;while&#xFF08;1&#xFF09;&#x3002;&#x5B9A;&#x6642;&#x5668;3&#x7528;&#x65BC;&#x5EE3;&#x64AD;&#x6A5F;&#x8EAB;&#x59FF;&#x614B;&#x4FE1;&#x606F;&#xFF0C;&#x5B9A;&#x6642;&#x5668;4&#x7684;&#x4EFB;&#x52D9;&#x8981;&#x7E41;&#x91CD;&#x5F97;&#x591A;&#xFF0C;&#x7528;&#x65BC; &#x66F4;&#x65B0;&#x9059;&#x63A7;&#x6578;&#x64DA;+&#x6A5F;&#x8EAB;&#x59FF;&#x614B;&#x878D;&#x5408;+PID&#x8A08;&#x7B97;&#x8F38;&#x51FA;+PWM&#x8F38;&#x51FA;&#x3002;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x5B9A;&#x6642;&#x5668;4&#x88E1;&#x9762;&#x4EFB;&#x52D9;&#x7684;&#x512A;&#x5148;&#x7D1A;&#x660E;&#x986F;&#x8981;&#x6BD4;&#x5B9A;&#x6642;&#x5668;3&#x5BE6;&#x6642;&#x6027;&#x8981;&#x6C42;&#x66F4;&#x9AD8;&#xFF0C;&#x6240;&#x4EE5;&#x3002;&#x4E2D;&#x65B7;&#x512A;&#x5148;&#x7D1A;&#x7684;&#x9806;&#x5E8F;&#x662F;&#xFF1A;&#x5B9A;&#x6642;&#x5668;4 &gt; &#x4E32;&#x53E3;&#x4E2D;&#x65B7; &gt; &#x5B9A;&#x6642;&#x5668;3&#x3002;&#x59FF;&#x614B;&#x66F4;&#x65B0;&#x983B;&#x7387;&#x70BA;1000Hz&#xFF0C;&#x5EE3;&#x64AD;&#x4FE1;&#x606F;&#x66F4;&#x65B0;&#x983B;&#x7387;&#x70BA;1Hz&#x3002;</p>
+<p>&#x7D9C;&#x4E0A;&#xFF0C;&#x6709;&#x9EDE;&#x4E82;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x5011;&#x7E37;&#x4E00;&#x7E37;&#x3002;&#x5F88;&#x7C21;&#x55AE;&#xFF0C;&#x53EA;&#x6709;3&#x7B87;&#x4E2D;&#x65B7;&#x3002;&#x5B9A;&#x6642;&#x5668;4&#x662F;&#x6838;&#x5FC3;&#x4E2D;&#x65B7;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x7B97;&#x6CD5;&#x90FD;&#x662F;&#x5728;&#x9019;&#x88E1;&#x5BE6;&#x73FE;&#x7684;&#xFF0C;&#x6A5F;&#x8EAB;&#x7684;&#x7A69;&#x5B9A;&#x4E5F;&#x662F;&#x9760;&#x9019;&#x500B;&#x4E2D;&#x65B7;&#x4F86;&#x5BE6;&#x73FE;&#x7684;</p>
+<h2 id="%E5%AE%9A%E6%99%82%E5%99%A84">&#x5B9A;&#x6642;&#x5668;4</h2>
+<p><img src="../assets/img/software-3.png" alt=""></p>
+<p><img src="../assets/img/software-4.png" alt=""></p>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5B9A;&#x6642;&#x5668;4&#x7684;&#x4E2D;&#x65B7;&#x670D;&#x52D9;&#x51FD;&#x6578;<code>TIM4_IRQHandler()</code>&#x4E2D;&#xFF0C;&#x6709;&#x500B;&#x4E00;<code>Controler()</code>&#x3002;</p>
+<p>&#x800C;<code>Controler()</code>&#x5167;&#x90E8;&#xFF0C;DMP&#x59FF;&#x614B;&#x8F38;&#x51FA;&#x2192;&#x63A5;&#x6536;&#x9059;&#x63A7;&#x5668;&#x6578;&#x64DA;&#x2192;&#x63A5;&#x6536;&#x4E32;&#x53E3;&#x6578;&#x64DA;&#x2192;PID&#x8A08;&#x7B97;+PWM&#x8F38;&#x51FA;,&#x9019;&#x4E9B;&#x4EFB;&#x52D9;&#x69CB;&#x6210;&#x4E86;<code>Controler()</code>&#x51FD;&#x6578;&#x3002;</p>
+<h2 id="%E5%AE%9A%E6%99%82%E5%99%A83">&#x5B9A;&#x6642;&#x5668;3</h2>
+<p>Crazepony&#x5728;&#x98DB;&#x884C;&#x904E;&#x7A0B;&#x4E2D;,&#x6703;&#x5411;&#x4E0A;&#x4F4D;&#x6A5F;&#x767C;&#x9001;&#x59FF;&#x614B;&#x6578;&#x64DA;&#x3002;&#x65BC;&#x662F;&#xFF0C;&#x6211;&#x5011;&#x7528;&#x4E86;&#x4E00;&#x500B;&#x5B9A;&#x6642;&#x5668;&#x4F86;&#x8655;&#x7406;&#x4E32;&#x53E3;&#x767C;&#x9001;&#x6578;&#x64DA;&#x7684;&#x554F;&#x984C;&#x3002;</p>
+<p>&#x5728;Crazepony&#x4E0A;&#xFF0C;ISP&#x4E0B;&#x8F09;&#x662F;&#x901A;&#x904E;UART1&#x4F86;&#x5BE6;&#x73FE;&#x7684;&#xFF0C;&#x6709;&#x7DDA;&#x4E32;&#x53E3;&#x6253;&#x5370;&#x7528;&#x7684;UART1&#xFF0C;2.1&#x85CD;&#x7259;&#x900F;&#x50B3;&#x4E5F;&#x662F;&#x63A5;&#x7684;UART1&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x70BA;&#x4E86;&#x907F;&#x514D;&#x85CD;&#x7259;&#x900F;&#x50B3;&#x548C;&#x6709;&#x7DDA;&#x4E32;&#x53E3;&#x4E4B;&#x9593;&#x7684;&#x6578;&#x64DA;&#x885D;&#x7A81;&#xFF0C;&#x6211;&#x5C07;&#x85CD;&#x7259;&#x7684;&#x4F9B;&#x96FB;&#x8A2D;&#x8A08;&#x6210;&#x4E86;&#x8EDF;&#x4EF6;&#x4F7F;&#x80FD;&#x65B9;&#x5F0F;&#x555F;&#x52D5;&#x85CD;&#x7259;&#x96FB;&#x6E90;&#x3002;&#x9019;&#x6A23;&#x4E00;&#x4F86;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x7A0B;&#x63A7;&#x5207;&#x63DB;&#x6578;&#x64DA;&#x901A;&#x9053;&#xFF0C;&#x4FDD;&#x8B49;&#x6578;&#x64DA;&#x6B63;&#x5E38;&#x3002;</p>
+<p>&#x5728;&#x56DE;&#x5230;&#x5B9A;&#x6642;&#x5668;3&#x7684;&#x529F;&#x80FD;&#x4E0A;&#x4F86;&#xFF0C;&#x5148;&#x770B;&#x5177;&#x9AD4;&#x7A0B;&#x5E8F;&#x6BB5;&#xFF1A;</p>
+<p><img src="../assets/img/software-5.png" alt=""></p>
+<p>&#x5F9E;&#x5B9A;&#x6642;&#x5668;3&#x7684;&#x4E2D;&#x65B7;&#x670D;&#x52D9;&#x5B50;&#x7A0B;&#x5E8F;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x6BCF;&#x9032;&#x4E00;&#x6B21;&#x4E2D;&#x65B7;&#xFF0C;&#x5411;&#x4E32;&#x53E3;&#x6253;&#x5370;&#x4E00;&#x6B21;logo&#x4EE5;&#x53CA;&#x76F8;&#x95DC;&#x7684;&#x59FF;&#x614B;&#x4FE1;&#x606F;&#x6578;&#x64DA;&#x3002;&#x6B64;&#x6642;&#xFF0C;&#x5982;&#x679C;&#x9023;&#x63A5;&#x7684;&#x662F;mircousb&#x7DDA;&#xFF0C;&#x90A3;&#x9EBC;&#x7528;&#x4E32;&#x53E3;&#x52A9;&#x624B;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5982;&#x5716;&#x6240;&#x793A;&#x7684;&#x59FF;&#x614B;&#x4FE1;&#x606F;&#x53CD;&#x994B;&#x3002;</p>
+<p><img src="../assets/img/software-6.png" alt=""></p>
+<p>&#x8AAA;&#x5230;&#x9019;&#x88E1;&#xFF0C;&#x6709;&#x5FC5;&#x8981;&#x8AAA;&#x4E00;&#x500B;&#x4E8B;&#x60C5;&#x5C31;&#x662F;&#xFF0C;&#x4E2D;&#x65B7;&#x512A;&#x5148;&#x7D1A;&#x7684;&#x554F;&#x984C;&#x3002;</p>
+<p>&#x7531;&#x65BC;&#x59FF;&#x614B;&#x6578;&#x64DA;&#x5C0D;&#x5BE6;&#x6642;&#x6027;&#x8981;&#x6C42;&#x662F;&#x6700;&#x9AD8;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#xFF0C;&#x8655;&#x7406;&#x59FF;&#x614B;&#x7684;&#x4EE3;&#x78BC;&#x61C9;&#x8A72;&#x662F;&#x512A;&#x5148;&#x57F7;&#x884C;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#xFF0C;&#x5B9A;&#x6642;&#x5668;4&#x7684;&#x512A;&#x5148;&#x7D1A;&#x8981;&#x9AD8;&#x65BC;&#x4E32;&#x53E3;&#x6253;&#x5370;&#x7684;&#x512A;&#x5148;&#x7D1A;&#xFF0C;&#x5373;&#x5B9A;&#x6642;&#x5668;4 &gt; &#x4E32;&#x53E3;&#x4E2D;&#x65B7; &gt; &#x5B9A;&#x6642;&#x5668;3&#x3002;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../wiki/hardware-base.html" class="navigation navigation-prev " aria-label="Previous page: Crazepony硬件原理講解"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../wiki/software-experience.html" class="navigation navigation-next " aria-label="Next page: Crazepony軟件開發經驗總結"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
